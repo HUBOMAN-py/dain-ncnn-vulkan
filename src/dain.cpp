@@ -19,7 +19,7 @@ DEFINE_LAYER_CREATOR(FilterInterpolation)
 DAIN::DAIN(int gpuid)
 {
     tilesize = 256;
-    prepadding = 32;
+    prepadding = 64;
 
     vkdev = ncnn::get_gpu_device(gpuid);
     dain_preproc = 0;
